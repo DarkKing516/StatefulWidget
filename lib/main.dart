@@ -31,7 +31,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _count = 0;
+  // int _count = 0;
 
   @override
   Widget build(BuildContext context) {
