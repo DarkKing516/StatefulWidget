@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Flutter code sample for [showDatePicker].
-
 void main() => runApp(const DatePickerApp());
 
 class DatePickerApp extends StatelessWidget {
@@ -10,6 +8,7 @@ class DatePickerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
       restorationScopeId: 'app',
       home: const DatePickerExample(restorationId: 'main'),
@@ -26,11 +25,8 @@ class DatePickerExample extends StatefulWidget {
   State<DatePickerExample> createState() => _DatePickerExampleState();
 }
 
-/// RestorationProperty objects can be used because of RestorationMixin.
 class _DatePickerExampleState extends State<DatePickerExample>
     with RestorationMixin {
-  // In this example, the restoration ID for the mixin is passed in through
-  // the [StatefulWidget]'s constructor.
   @override
   String? get restorationId => widget.restorationId;
 
@@ -93,7 +89,7 @@ class _DatePickerExampleState extends State<DatePickerExample>
           onPressed: () {
             _restorableDatePickerRouteFuture.present();
           },
-          child: const Text('Open Date Picker'),
+          child: const Text('oa'),
         ),
       ),
     );
