@@ -44,7 +44,6 @@ class _DropdownButtonExampleState extends State<DropdownButtonExample> {
         color: Colors.deepPurpleAccent,
       ),
       onChanged: (String? value) {
-        // This is called when the user selects an item.
         setState(() {
           dropdownValue = value!;
         });
